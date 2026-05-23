@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doris Yeh｜高中教育老師</title>
+  <style>
+    body{margin:0;font-family:system-ui,-apple-system,'Noto Sans TC',sans-serif;background:#f6f1ea;color:#1f1b17}
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch}
+    .card{background:rgba(255,255,255,.72);border:1px solid rgba(92,73,60,.14);border-radius:24px;box-shadow:0 20px 60px rgba(69,48,36,.10);padding:28px}
+    h1{font-family:Georgia,serif;font-size:clamp(2rem,5vw,4rem);line-height:1.1;margin:.2em 0}
+    h2{font-family:Georgia,serif;margin:0 0 12px}
+    .btn{display:inline-block;background:#2a211d;color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;margin-right:10px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .small{color:#6f6258}
+    section{padding:18px 0}
+    .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
+    input,textarea{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:14px;border:1px solid rgba(92,73,60,.14);font:inherit}
+    @media (max-width:900px){.hero,.grid,.contact{grid-template-columns:1fr}.wrap{padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="card">
+        <div class="small">專為需要教育資源的學生而設計</div>
+        <h1>讓每個人，都能看見自己的優勢，並走向更好的未來。</h1>
+        <p class="small">Doris Yeh 以 15 年教育經驗，陪伴學生建立自信、探索方向，也協助社會人士準備專業考試。</p>
+        <div style="margin-top:18px"><a class="btn" href="#contact">立即聯絡</a><a class="btn" style="background:#8a5b45" href="#service">了解服務</a></div>
+      </div>
+      <div class="card">
+        <h2>Doris Yeh</h2>
+        <p class="small">高中教育老師｜引導式菁英教育</p>
+        <p>教育不只是成績的提升，更是幫助一個人看見自己的可能性。</p>
+      </div>
+    </section>
+
+    <section class="card" id="about">
+      <h2>About</h2>
+      <p>我從事教育工作已逾 15 年，長期陪伴學生在人生重要階段中找到方向與價值。除了輔導高中生探索自身優勢、建立自信，也協助許多社會人士準備各類專業考試。</p>
+    </section>
+
+    <section class="card" id="service">
+      <h2>Service</h2>
+      <div class="grid">
+        <div class="card" style="padding:18px"><strong>教育資源支持</strong><p class="small">提供適合學生需求的學習資源。</p></div>
+        <div class="card" style="padding:18px"><strong>引導式學習</strong><p class="small">協助學生找出方向與優勢。</p></div>
+        <div class="card" style="padding:18px"><strong>菁英式方法</strong><p class="small">建立紀律、效率與自信。</p></div>
+      </div>
+    </section>
+
+    <section class="card" id="process">
+      <h2>Process</h2>
+      <ol class="small">
+        <li>了解現況</li><li>找出優勢</li><li>建立計畫</li><li>持續成長</li>
+      </ol>
+    </section>
+
+    <section class="card" id="trust">
+      <h2>Trust</h2>
+      <p>15 年來，我們持續集結理念相同的老師，投入偏遠地區教育，希望讓更多孩子獲得公平且優質的學習資源。</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="card" style="background:#2a211d;color:#f6ede5">
+        <h2>Contact</h2>
+        <p>yunyun666856@gmail.com</p>
+        <p>yun_yun0920</p>
+      </div>
+      <div class="card">
+        <h2>聯絡表單</h2>
+        <input placeholder="姓名" style="margin-bottom:10px" />
+        <input placeholder="Email" style="margin-bottom:10px" />
+        <textarea rows="5" placeholder="需求內容"></textarea>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
