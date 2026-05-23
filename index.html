@@ -17,7 +17,18 @@
     section{padding:18px 0}
     .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:18px}
     input,textarea{width:100%;box-sizing:border-box;padding:12px 14px;border-radius:14px;border:1px solid rgba(92,73,60,.14);font:inherit}
-    @media (max-width:900px){.hero,.grid,.contact{grid-template-columns:1fr}.wrap{padding:16px}}
+
+    /* Hero card with photo layout */
+    .hero-right{display:flex;flex-direction:column;gap:18px}
+    .hero-photo-card{display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.72);border:1px solid rgba(92,73,60,.14);border-radius:24px;box-shadow:0 20px 60px rgba(69,48,36,.10);padding:28px}
+    .profile-img{width:160px;height:240px;object-fit:cover;border-radius:999px / 999px;border:3px solid rgba(92,73,60,.18);box-shadow:0 8px 32px rgba(69,48,36,.18);display:block}
+
+    @media (max-width:900px){
+      .hero,.grid,.contact{grid-template-columns:1fr}
+      .wrap{padding:16px}
+      .hero{grid-template-columns:1fr}
+      .hero-right{flex-direction:column-reverse}
+    }
   </style>
 </head>
 <body>
@@ -29,10 +40,19 @@
         <p class="small">Doris Yeh 以 15 年教育經驗，陪伴學生建立自信、探索方向，也協助社會人士準備專業考試。</p>
         <div style="margin-top:18px"><a class="btn" href="#contact">立即聯絡</a><a class="btn" style="background:#8a5b45" href="#service">了解服務</a></div>
       </div>
-      <div class="card">
-        <h2>Doris Yeh</h2>
-        <p class="small">高中教育老師｜引導式菁英教育</p>
-        <p>教育不只是成績的提升，更是幫助一個人看見自己的可能性。</p>
+      <div class="hero-right">
+        <div class="hero-photo-card">
+          <img
+            class="profile-img"
+            src="https://yunyun666856.github.io/dorismay/1741847423207.jpg"
+            alt="Doris Yeh 個人照片"
+          />
+        </div>
+        <div class="card">
+          <h2>Doris Yeh</h2>
+          <p class="small">高中教育老師｜引導式菁英教育</p>
+          <p>教育不只是成績的提升，更是幫助一個人看見自己的可能性。</p>
+        </div>
       </div>
     </section>
 
